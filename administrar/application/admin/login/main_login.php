@@ -7,7 +7,7 @@ if (isset($_SESSION['username'])) {
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="ISO-8859-1">
+    <meta charset="UTF-8">
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
@@ -16,7 +16,7 @@ if (isset($_SESSION['username'])) {
     <style>
     
     body { 
-			background-image: url(fondo-hera.jpg) ;
+			background-image: url(fondo.jpg) ;
 			background-position: center center;
 			background-repeat:  no-repeat;
 			background-attachment: fixed;
@@ -37,13 +37,13 @@ if (isset($_SESSION['username'])) {
          <br><br><br>
      <h4 align="center" style="color:gray;">ACCESO A LA ZONA DE ADMINISTRACION DE LA APP</h4>
         <input name="myusername" id="myusername" type="text" class="form-control" placeholder="Email" autofocus>
-        <input name="mypassword" id="mypassword" type="password" class="form-control" placeholder="Contrase�a">
+        <input name="mypassword" id="mypassword" type="password" class="form-control" placeholder="Contraseña">
         <!-- The checkbox remember me is not implemented yet...
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>
         -->
-        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesi�n</button>
+        <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
 
         <div id="message"></div>
       </form>
