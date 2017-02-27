@@ -33,6 +33,19 @@ function contar_agencias(){
 	$num = $row[0];
 	return $num;
 }
+function contar_citas(){
+	$result = mysql_query("SELECT count(*) FROM tb_citas_servicio");
+	$row = mysql_fetch_row($result);
+	$num = $row[0];
+	return $num;
+}
+function get_incremento_citas_mes(){
+	$result = mysql_query("SELECT count(*) AS total FROM tb_citas_servicio WHERE time_stamp < CURDATE()");
+	$row = mysql_fetch_row($result);
+	$num_anterior = $row['total'];
+	return $num_anterior;
+	
+}
 ?>
   
                         

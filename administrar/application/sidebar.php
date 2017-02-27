@@ -72,19 +72,19 @@
                 
                   <li>
                   <a href="asesores.php">
-                    <i class="fa fa-car"></i> <span>Veh�culos</span>
+                    <i class="fa fa-car"></i> <span>Vehículos</span>
                     <small class="label pull-right bg-red">3</small>
                   </a>
                 </li>
                  <li>
                   <a href="asesores.php">
-                    <i class="fa fa-calendar"></i> <span>A�os</span>
+                    <i class="fa fa-calendar"></i> <span>Años</span>
                     <small class="label pull-right bg-red">3</small>
                   </a>
                 </li>
                 <li>
                   <a href="asesores.php">
-                    <i class="fa fa-tachometer"></i> <span>Kil�metros</span>
+                    <i class="fa fa-tachometer"></i> <span>Kilómetros</span>
                     <small class="label pull-right bg-red">3</small>
                   </a>
                 </li>
@@ -97,7 +97,7 @@
                 <li class="header">Tr�mites Online</li>
                  <li>
                   <a href="asesores.php">
-                    <i class="fa fa-cubes"></i> <span>Tipos de tr�mites</span>
+                    <i class="fa fa-cubes"></i> <span>Tipos de trámites</span>
                     <small class="label pull-right bg-red">3</small>
                   </a>
                 </li>

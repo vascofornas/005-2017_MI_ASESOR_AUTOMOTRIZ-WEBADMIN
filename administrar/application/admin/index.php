@@ -3,7 +3,7 @@ include 'funciones.php';?>
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="ISO-8859-1">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Mi Asesor Automotriz</title>
   <!-- Tell the browser to be responsive to screen width -->
@@ -97,64 +97,48 @@ include 'funciones.php';?>
 <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
-                <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+                <span class="info-box-icon bg-green"><i class="fa fa-android "></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">Messages</span>
-                  <span class="info-box-number">1,410</span>
+                  <span class="info-box-text">Descargas ANDROID</span>
+                  <span class="info-box-number">19</span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
             </div><!-- /.col -->
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
-                <span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
+                <span class="info-box-icon bg-blue"><i class="fa fa-apple "></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">Bookmarks</span>
-                  <span class="info-box-number">410</span>
+                  <span class="info-box-text">Descargas iOS</span>
+                  <span class="info-box-number">6</span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
             </div><!-- /.col -->
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="info-box">
-                <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
-                <div class="info-box-content">
-                  <span class="info-box-text">Uploads</span>
-                  <span class="info-box-number">13,648</span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-            </div><!-- /.col -->
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="info-box">
-                <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
-                <div class="info-box-content">
-                  <span class="info-box-text">Likes</span>
-                  <span class="info-box-number">93,139</span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-            </div><!-- /.col -->
+           
+           
           </div><!-- /.row -->
 
-
+<?php echo get_incremento_citas_mes()?>
           <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box bg-aqua">
-                <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
+                <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">Bookmarks</span>
-                  <span class="info-box-number">41,410</span>
+                  <span class="info-box-text">Citas a Servicio</span>
+                  <span class="info-box-number"><?php echo contar_citas()?></span>
                   <div class="progress">
                     <div class="progress-bar" style="width: 70%"></div>
                   </div>
                   <span class="progress-description">
-                    70% Increase in 30 Days
+                    <?php echo get_incremento_citas_mes()?>% Increase in 30 Days
                   </span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
             </div><!-- /.col -->
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box bg-green">
-                <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
+                <span class="info-box-icon"><i class="fa fa-usd"></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">Likes</span>
+                  <span class="info-box-text">Costos de Servicios</span>
                   <span class="info-box-number">41,410</span>
                   <div class="progress">
                     <div class="progress-bar" style="width: 70%"></div>
@@ -167,9 +151,9 @@ include 'funciones.php';?>
             </div><!-- /.col -->
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box bg-yellow">
-                <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
+                <span class="info-box-icon"><i class="fa fa-briefcase "></i></span>
                 <div class="info-box-content">
-                  <span class="info-box-text">Events</span>
+                  <span class="info-box-text">Trámites Online</span>
                   <span class="info-box-number">41,410</span>
                   <div class="progress">
                     <div class="progress-bar" style="width: 70%"></div>
@@ -180,21 +164,7 @@ include 'funciones.php';?>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
             </div><!-- /.col -->
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="info-box bg-red">
-                <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
-                <div class="info-box-content">
-                  <span class="info-box-text">Comments</span>
-                  <span class="info-box-number">41,410</span>
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 70%"></div>
-                  </div>
-                  <span class="progress-description">
-                    70% Increase in 30 Days
-                  </span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-            </div><!-- /.col -->
+            
           </div><!-- /.row -->
 
   <!-- Small boxes (Stat box) -->
@@ -203,11 +173,11 @@ include 'funciones.php';?>
               <!-- small box -->
               <div class="small-box bg-aqua">
                 <div class="inner">
-                  <h3>150</h3>
-                  <p>New Orders</p>
+                  <h3><?php echo contar_agencias()?></h3>
+                  <p>Agencias</p>
                 </div>
                 <div class="icon">
-                  <i class="fa fa-shopping-cart"></i>
+                  <i class="fa fa-car "></i>
                 </div>
                 <a href="#" class="small-box-footer">
                   More info <i class="fa fa-arrow-circle-right"></i>
@@ -218,11 +188,11 @@ include 'funciones.php';?>
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>53<sup style="font-size: 20px">%</sup></h3>
-                  <p>Bounce Rate</p>
+                  <h3><?php echo contar_usuarios()?></h3>
+                  <p>Asesores</p>
                 </div>
                 <div class="icon">
-                  <i class="ion ion-stats-bars"></i>
+                  <i class="ion ion-person-add"></i>
                 </div>
                 <a href="#" class="small-box-footer">
                   More info <i class="fa fa-arrow-circle-right"></i>

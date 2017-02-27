@@ -31,7 +31,7 @@ if (isset($_SESSION['username'])) {
   <body>
 
     <div class="container">
-<IMG SRC="logoappauto.png" WIDTH=80 HEIGHT=80 align="center">
+<IMG SRC="logo-2.png" WIDTH=80 HEIGHT=80 align="center">
       <form class="form-signin" name="form1" method="post" action="checklogin.php">
          
          <br><br><br>
